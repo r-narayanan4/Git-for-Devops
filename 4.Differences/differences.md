@@ -39,6 +39,23 @@
 | Safety                  | Safer, as it doesn't alter existing commits.             | Riskier, as it can discard commits and their changes.   |
 | Use Cases               | Preferred for reverting changes on shared branches.      | Useful for undoing local changes or resetting the repo to a certain state. |
 
+## Git Reset:
+
+Git reset command is used to remove a commit from the history and it changes
+git reset takes three different options 
+- soft rest - removes the commit and it keep changes in staging area 
+- hard reset - removes the commit permanently and dicard the changes
+- mixed reset - removes the commit and it keeps changes in working area
+- if no options is mentioned it takes default as mixed reset
+
+## Git revert
+- Incase if we push our commits to remote repo then suddenly you thought you need to undo in remote then ? 
+- Here git reset wont work for public commits, git reset works only for local commits.
+
+- Solution for this you need to use git revert .(If you want discard the changes in remote repo then you need to use git revert.)
+- Note: It wont remove the commit rather it removes changes in the commit, makes a new commit
+
+
 ## Stashing and Checkouts
 
 | Aspect                  | Stashing                                                  | Checkouts                                                |
