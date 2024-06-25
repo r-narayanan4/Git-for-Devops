@@ -26,7 +26,7 @@
 |-------------------------|-----------------------------------------------------------|-----------------------------------------------------------|
 | Operation               | Fetches changes and merges them into the current branch. | Retrieves changes from a remote repository without merging.|
 | Automatic merging       | Automatically merges fetched changes into the current branch. | Requires manual merging after fetching changes.          |
-| Use Cases               | Quick way to update local branch with remote changes.    | Useful for reviewing changes before integrating them.     |
+| Use Cases               | Quick way to update local branch with remote changes.    | Useful for reviewing changes before integrating them. (remotes/orgin/main)    |
 | Impact on History       | Creates a merge commit, affecting the commit history.    | Does not alter commit history until merged explicitly.    |
 
 
